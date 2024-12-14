@@ -38,55 +38,59 @@
                         <li class="nav-item">
                             <a class="nav-link " aria-current="page" href="#">Proveedores</a>
                         </li>
-                        <!--
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  -->
-
-                        <!--
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
-                  </li>
-                  -->
-
-                        <!--
-                  
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
-                  -->
-                    </ul>
-                    <!--
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                -->
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
         <section class="movies--list--section container pt-5 pb-5">
             <h1 class="movies--list--section__title text-center fs-3 text-uppercase pt-3 main-title">Listas de Alumnos
                 del Markham</h1>
-            <div class="row g-3 mt-3s">
 
-
-
+            <div class="container mt-4">
+                <form id="agregarAlumnoForm">
+                    <div class="row mb-3">
+                        <label for="anio" class="col-sm-2 col-form-label">Año:</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="anio" placeholder="Ej: 2025">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="grado" class="col-sm-2 col-form-label">Grado:</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="grado" placeholder="Ej: 5">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="nivel" class="col-sm-2 col-form-label">Nivel:</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="nivel" placeholder="Ej: Secundaria">
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Agregar Alumno -->
+                    <div class="row mb-3">
+                        <label for="alumnoSelect" class="col-sm-2 col-form-label">Alumno:</label>
+                        <div class="col-sm-4">
+                            <select class="form-select" id="alumnoSelect">
+                                <option selected disabled>Seleccione un alumno</option>
+                                <option value="1">David Allasi</option>
+                                <option value="1">Sergio Matsukawa</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <button type="button" class="btn main--button" id="agregarAlumnoBtn">Agregar</button>
+                        </div>
+                    </div>
+                </form>
             </div>
 
+            <hr>
+
             <div class="table--container container">
-                <table class="table text-center movie--list  table-borderless table-striped main--table">
+                <table class="table text-center movie--list  table-bordered table-striped main--table">
                     <thead>
                         <tr>
                             <th scope="col">Codigo de Alumno</th>
@@ -167,7 +171,7 @@
                 <div class="col-3 post--venta--container">
                     <div class="correo--container">
                         <i class="bi bi-envelope-fill text--footer icon-footer"></i>
-                        <p class="text--footer"> postventa@retailexpress.pe</p>
+                        <p class="text--footer"> alumnos@markahm.edu.pe</p>
                     </div>
                     <div class="telef--container">
                         <i class="bi bi-telephone-fill text--footer icon-footer"></i>
@@ -220,7 +224,7 @@
         </section>
 
         <section class="container">
-            <p class="text-center tittle--footer"> © 2024 Retail Express. Todos los derechos reservados – Política de
+            <p class="text-center tittle--footer"> © 2024 Markahm. Todos los derechos reservados – Política de
                 Privacidad – Política de Tratamiento de Datos </p>
         </section>
     </footer>
