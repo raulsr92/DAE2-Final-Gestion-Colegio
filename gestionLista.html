@@ -76,7 +76,7 @@
   </header>
   <main>
     <section class="movies--list--section container pt-5 pb-5">
-      <h1 class="movies--list--section__title text-center fs-3 text-uppercase pt-3 main-title">Listas de Alumnos del Markham</h1>
+      <h1 class="movies--list--section__title text-center fs-3 text-uppercase pt-3 main-title">Gestión de Grados</h1>
       <form class="row g-3 mt-3 busqueda-section">
 
         <div class="col-5 g-3 align-items-center busqueda-section-item">
@@ -100,11 +100,11 @@
         <table class="table text-center movie--list table-striped main--table">
           <thead>
             <tr>
-              <th scope="col">Id</th>
-              <th scope="col">Año</th>
-              <th scope="col">Grado</th>
-              <th scope="col">Nivel</th>
-              <th scope="col" class="movie--list__edit-column">Agregar Alumno</th>
+              <th class="cabecera" scope="col">Id</th>
+              <th class="cabecera" scope="col">Año</th>
+              <th class="cabecera" scope="col">Grado</th>
+              <th class="cabecera" scope="col">Nivel</th>
+              <th class="cabecera" scope="col" class="movie--list__edit-column">Agregar Alumno</th>
 
             </tr>
           </thead>
@@ -115,7 +115,21 @@
               <td scope="col">5</td>
               <td scope="col">Primaria</td>
               <td>
-                <a href=""><i class="bi bi-pencil-square movie--list__edit-icon main-icons"></i></a>
+                <a href="">
+                  <i class="bi bi-person-fill-add main-icons"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td scope="col">001</td>
+              <td scope="col">2025</td>
+              <td scope="col">5</td>
+              <td scope="col">Primaria</td>
+              <td>
+                <a href="">
+                  <i class="bi bi-person-fill-add main-icons"></i>
+                </a>
               </td>
             </tr>
           </tbody>
@@ -125,11 +139,11 @@
       <div class="row justify-content-center">
         <button type="submit"
           class="col-2 btn btn-secondary mb-3 movies--list--section__button main--button button-shadow">
-
-          <i class="bi bi-person-fill-add icon-button"></i>
           <!-- <a href="nuevoCliente.html"> -->
             Nuevo
           <!-- </a> -->
+          <i class="bi bi-plus-circle icon-button"></i>
+
         </button>
       </div>
 

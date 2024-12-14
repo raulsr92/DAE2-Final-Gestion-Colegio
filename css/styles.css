@@ -64,7 +64,7 @@ a{
 }
 
 .main-icons{
-    font-size: 20px;
+    font-size: 25px;
     color: #AB4459;
 }
 
@@ -96,7 +96,7 @@ header, nav{
     width: 100%;
     height: auto;
     padding: 70px 30px 20px 30px !important;
-    background-color:  #ffffff !important;
+    background-color:  #DCB0A6 !important;
 }
 .correo--container, .telef--container {
     display: flex !important;
@@ -232,4 +232,10 @@ h1{
 
 #carousel .overlay .container, #carousel .overlay .container .row{
     height: 100%;
+}
+
+
+.cabecera{
+    background-color:#6B3529 !important;
+    color: whitesmoke!important;
 }
